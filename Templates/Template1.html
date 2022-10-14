@@ -1,0 +1,51 @@
+
+{% load static%}
+<!-- Alternative method ie jinja format to give path of image file -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitesh</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+<body>
+    <h1>Hitesh Gorantla</h1>
+    <h2>Associate Software Engineer</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis repellat repellendus quidem delectus incidunt, itaque, reiciendis dolorum odit necessitatibus hic dignissimos iste vel expedita aliquam molestiae quas molestias quia? Autem?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sed itaque quisquam exercitationem soluta temporibus, aut atque sapiente? Sapiente ipsum libero explicabo voluptatem veritatis quia labore eius quod dolorum error.</li>
+
+
+    </ul>
+    <br>
+<!-- Jinja Tag -->
+    Name: {{ name}} 
+    <br>
+    Position: {{Position}}
+
+    <!-- Operations Jinja Tag -->
+    <ol>
+        {% for fruit in fruits %}
+            <li>
+                {{fruit}}
+            </li>
+            {%endfor%}
+    </ol>
+
+    <br>
+    <img src="{% static 'img/itilite.png'%}" alt="itilite">
+    <!-- <img src="../static/img/itilite.png" alt="ititlite"> -->
+    
+    
+</body>
+</html>
