@@ -1,3 +1,4 @@
 djangp=4.1.2
 mysql_connector_python
 pymysql
+pillow=9.2.0

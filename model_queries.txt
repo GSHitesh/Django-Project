@@ -1,0 +1,24 @@
+modelname.objects.all()  Equivalent to select * from tablename;
+
+modelname.objects.filter(condition) equivalent to select * from tablename where condition;
+name__istartswith="value"
+name__iendswith="value"
+name__icontians="value"
+date__year=year
+column_name__gte="#greater than or equal to"
+column_name__lte="#lesser than or equal to"
+column_name__lt="#lesser than
+column_name__gt="#greater than
+column_name__ne="#not equal to
+
+modelname.objects.get(condition)#fetch u a single data row
+
+modelname.objects.get_or_create(colname=val....colname=value)
+
+modelname.objects.create(colname=val....colname=value)
+
+modelname.objects.update_or_create(colname=val....colname=value)
+
+modelname.objects.update(colname=val....colname=value)#updates the record
+
+modelname.objects.filter(condition).delete()# to delete the decords
