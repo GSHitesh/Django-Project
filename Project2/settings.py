@@ -83,13 +83,13 @@ WSGI_APPLICATION = 'Project2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopyg2',
         # 'NAME': os.path.join (BASE_DIR, 'app2'/),
-        'NAME':'app2',
-        'USER': 'root',
+        'NAME':'db1',
+        'USER': 'postgres',
         'PASSWORD': 'password',
         'HOST':'127.0.0.1',
-        'PORT': '3306',
+        'PORT': '5432',
 
     }
 }
